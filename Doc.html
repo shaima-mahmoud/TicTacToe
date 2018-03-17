@@ -1,0 +1,61 @@
+<center>
+<h1>Tic Tac Toe Game</h1>
+<h4>of 3 players including a computer player</h4>
+</center>
+<h3>Used Technologies:</h3>
+	<ul>
+	
+	<ul><li>Java 8</li>
+	<li>Gradle 4.6</li>
+	<li>JUnit 4.12</li>
+	</ul>
+	</ul>
+	
+
+
+<h3>How to run code:</h3>
+<ul>
+<li>Install gradle by downloading gradle biary <a href="https://gradle.org/install/">here</a></li>
+<li>Extract gradle folder at any prefered location , then navigate to ../gradle/bin and copy this URL </li>
+<li>Now you need to install gradle at your computer</li>
+<li>On desktop: Rightclick Computer->Properties->Advanced system settings->Environment Variables-> System Variables->Select Path->Edit->Paste the coppied URL at the end of the line and save
+<li>Open cmd </li>
+<li>type : gradle -v </li>
+<li>If you got 
+Gradle 4.6, or the version you have downloaded, so you did it, now let's run the code</li>
+<li>download code from giHub </li>
+<li>extract it t any preferred location </li>
+<li>Get into the project folder ../TicTacToe</li>
+<li>copy this URL </li>
+<li>Go to cmd and cd to the coppied URL, windows : cd /d URL</li>
+<li>Now type : gradle clean build run</li>
+<li>Prodram should be running now</li>
+<li> Every player will be invited to take his move by entering a single line entry in this format x,y representing the position he wants to pick where x is the row number from 0 to L-1 and y is the column number from 0 to L-1.</li>
+</ul>
+
+
+	
+<h3>How to Play:</h3>
+<ul>
+<li>Game has default entry A, B, C for players characters and 5 game board side length L, if you wish to customize these configurations go to <i><b>config.properties</b></i> file and change them without changing the file formate</li>
+
+<li>After running the game application, the game starting player will be randomly picked by the computer everytime.</li>
+<li> Every player will be invited to take his move by entering a single line entry in this format x,y replresenting the position he wants to pick where x is the row number from 0 to L-1 and y is the column number from 0 to L-1.</li>
+</ul>
+
+
+
+<h3>Solution Architecture:</h3>
+	<p>The solution is a console java application with 1 testing file.
+
+<h3>Classes:</h3>
+	<b>Main class:</b><br/> where the game starts, validates a move and finds a winner.
+	</br><br/><b>Player abstract class :  </b>has
+	<br/><i>private char symbol;</i> 
+	<br/><i>public int pay(char[] gameboard);</i>
+	
+	<br/><br/><b>HumanPlayer class : </b>	
+	<br/> implements the <i>play()</i> method and the AI of the computer player
+	<br/><br/><b>HumanPlayer class : </b>	
+	<br/>implements the <i>play()</i> method that reads human player entry from the consol
+	built with gradle.</p>
