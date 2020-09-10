@@ -7,6 +7,7 @@ import java.util.Properties;
 
 public class Main {
 
+    // test
 	public static Player[] players = new Player[3];
 	public static char[] gameBoard;
 	
